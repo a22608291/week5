@@ -1,0 +1,60 @@
+$primary:#EDF4EE;
+$secondary:#CDDDCD;
+$primary-dark:#2A8356;
+$text-primary:#121212;
+
+@import "layout";
+
+.handIn__list{
+  .handIn__item{
+    border-color: $primary;
+    font-size: 12px;
+    &__title{
+      font-size: 16px;
+      font-weight: 700;
+      span{
+        font-size: 12px;
+        font-weight: 500;
+        color: #0000009A;
+      }
+    }
+  }
+  .list-group-item.active{
+    color: #000;
+    background-color: $primary;
+    border-color: $secondary;
+  }
+}
+.handIn__content{
+  
+  &__title{
+    font-size: 12px;
+    background-color: $primary;
+    border-color: $secondary;
+    p:last-child{
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  &__name{
+    h6{
+      font-weight: 700;
+    }
+    span{
+      font-size: 12px;
+      color: #0000009A;
+    }
+  }
+  &__qa__txt{
+    font-size: 14px;
+  }
+  .attached{
+    h6{
+      font-weight: 700;
+      background-color: $primary;
+      padding: 8px 12px;
+      border-color:$secondary;
+    }
+  }
+}
+

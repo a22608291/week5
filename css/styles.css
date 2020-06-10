@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  color: #121212; }
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+a {
+  font-weight: 700; }
+  a:hover {
+    text-decoration: none;
+    color: #2A8356; }
+
+.sidebar {
+  width: 296px;
+  height: 100vh;
+  padding: 32px;
+  background-color: #EDF4EE;
+  position: fixed; }
+  .sidebar__logo {
+    margin-bottom: 34px; }
+  .sidebar__menu__list {
+    margin-bottom: 29px; }
+  .sidebar__menu a:hover span {
+    color: #2A8356; }
+  .sidebar__admin h5 {
+    margin-bottom: 0; }
+  .sidebar__admin p {
+    font-size: 14px; }
+
+.rightSide {
+  margin-left: 296px;
+  width: 100%;
+  padding: 0 32px; }
+
+.header {
+  height: 93px;
+  padding: 32px 0; }
+  .header__main h4 {
+    margin-right: 46px; }
+  .header__main p {
+    margin-right: 7px; }
+  .header__main span {
+    color: #2A8356; }
+  .header a {
+    color: #121212;
+    font-weight: 700; }
+    .header a:hover {
+      text-decoration: none;
+      color: #2A8356; }
+
+.handIn__list .handIn__item {
+  border-color: #EDF4EE;
+  font-size: 12px; }
+  .handIn__list .handIn__item__title {
+    font-size: 16px;
+    font-weight: 700; }
+    .handIn__list .handIn__item__title span {
+      font-size: 12px;
+      font-weight: 500;
+      color: #0000009A; }
+
+.handIn__list .list-group-item.active {
+  color: #000;
+  background-color: #EDF4EE;
+  border-color: #CDDDCD; }
+
+.handIn__content__title {
+  font-size: 12px;
+  background-color: #EDF4EE;
+  border-color: #CDDDCD; }
+  .handIn__content__title p:last-child {
+    font-size: 16px;
+    font-weight: 700; }
+
+.handIn__content__name h6 {
+  font-weight: 700; }
+
+.handIn__content__name span {
+  font-size: 12px;
+  color: #0000009A; }
+
+.handIn__content__qa__txt {
+  font-size: 14px; }
+
+.handIn__content .attached h6 {
+  font-weight: 700;
+  background-color: #EDF4EE;
+  padding: 8px 12px;
+  border-color: #CDDDCD; }
+/*# sourceMappingURL=styles.css.map */

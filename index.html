@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <div class="wrap d-flex">
+        <!-- 主選單 -->
+        <nav class="sidebar d-flex flex-column justify-content-between">
+            <div class="sidebar__main">
+                <h1 class="sidebar__logo">
+                    <img src="images/logo.svg" alt="">
+                </h1>
+                <ul class="sidebar__menu list-unstyled">
+                    <li class="sidebar__menu__list">
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="material-icons mr-3">insert_chart</span>Dashboard
+                        </a>
+                    </li>
+                    <li class="sidebar__menu__list">
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="material-icons mr-3">forum</span>Question
+                        </a>
+                    </li>
+                    <li class="sidebar__menu__list">
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="material-icons mr-3">assignment</span>Assignment
+                        </a>
+                    </li>
+                    <li class="sidebar__menu__list">
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="material-icons mr-3">video_library</span>Course
+                        </a>
+                    </li>
+                    <li class="sidebar__menu__list">
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="material-icons mr-3">supervisor_account</span>Admin
+                        </a>
+                    </li>
+                    <li class="sidebar__menu__list">
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="material-icons mr-3">settings</span>Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__admin media">
+                <img class="avatar mr-3"
+                    src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+                    alt="">
+                <div class="media-body">
+                    <h5 class="mt-0">Andy Chen</h5>
+                    <p>andy0401@mail.com</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 選單內容 -->
+        <div class="rightSide">
+            <header class="header d-flex justify-content-between">
+                <div class="header__main d-flex align-items-end">
+                    <h4>Assignment</h4>
+                    <div>
+                        <a class="d-flex align-items-end" href="#" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            All Courses<span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__service">
+                    <a href="#">
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </a>
+                    <a href="#" class="ml-3">
+                        <span class="material-icons ">
+                            notifications_active
+                        </span>
+                    </a>
+                </div>
+            </header>
+            <!-- 任務下拉選單 -->
+            <div class="dropdown">
+                <a class="d-flex align-items-end" href="#" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    All(4)<span class="material-icons">
+                        keyboard_arrow_down
+                    </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="handIndropdownMenu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <section class="main row">
+                <!-- 任務回報列表 -->
+                <div class="col-4">
+                    <div class="handIn__list list-group" id="list-tab" role="tablist">
+                        <a class="handIn__item list-group-item list-group-item-action active" id="list-qa1-list"
+                            data-toggle="list" href="#list-qa1" role="tab" aria-controls="qa1">
+                            <p class="handIn__item__subtitle d-flex justify-content-between">Chapter Assignment
+                                2<span>4
+                                    hrs ago</span></p>
+                            <p class="handIn__item__title d-flex justify-content-between align-items-end">Please
+                                check
+                                this
+                                file…<span>Emily Wang</span></p>
+                        </a>
+                        <a class="handIn__item list-group-item list-group-item-action" id="list-qa2-list"
+                            data-toggle="list" href="#list-qa2" role="tab" aria-controls="qa2">
+                            <p class="handIn__item__subtitle d-flex justify-content-between">Chapter Assignment
+                                1<span>12 hrs ago</span></p>
+                            <p class="handIn__item__title d-flex justify-content-between align-items-end">My
+                                Homework<span>David
+                                    Xu</span></p>
+                        </a>
+                        <a class="handIn__item list-group-item list-group-item-action" id="list-qa3-list"
+                            data-toggle="list" href="#list-qa3" role="tab" aria-controls="qa3">
+                            <p class="handIn__item__subtitle d-flex justify-content-between">Final
+                                Assignment<span>18
+                                    hrs ago</span></p>
+                            <p class="handIn__item__title d-flex justify-content-between align-items-end">Have a
+                                problem
+                                with this…<span>Tony Wei</span>
+                            </p>
+                        </a>
+                        <a class="handIn__item list-group-item list-group-item-action" id="list-qa4-list"
+                            data-toggle="list" href="#list-qa4" role="tab" aria-controls="qa4">
+                            <p class="handIn__item__subtitle d-flex justify-content-between">Final
+                                Assignment<span>19
+                                    hrs ago</span></p>
+                            <p class="handIn__item__title d-flex justify-content-between align-items-end">Did I do
+                                it
+                                right?<span>Christina Lin</span></p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 任務回報內容 -->
+                <div class="handIn__content col-8">
+                    <div class="tab-content mb-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-qa1" role="tabpanel"
+                            aria-labelledby="list-qa1-list">
+                            <div class="card">
+                                <div
+                                    class="handIn__content__title card-header d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="d-flex justify-content-between">Chapter Assignment 2 /
+                                            HTML&CSS</p>
+                                        <p class="d-flex justify-content-between">Please check this file for
+                                            me, thanks!</p>
+                                    </div>
+                                    <span class="material-icons">
+                                        more_vert
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="handIn__content__info list-unstyled">
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Emily Wang <br><span>
+                                                            10:38 AM (4 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi Teacher, the attached file is my homework of chapter 2. And
+                                                    here
+                                                    comes a question: Why in the following code the height of the
+                                                    div is
+                                                    bigger than the height of the img ? There is a gap below the
+                                                    image,
+                                                    but it doesn’t seems to be a padding/margin. What is the gap or
+                                                    extra space below image?
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Andy Chen (You) <br><span>
+                                                            13:24 AM (1 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi David, by default, an image is rendered inline, like a letter
+                                                    so
+                                                    it sits on the same line that a, b, c and d sit on. There is
+                                                    space
+                                                    below that line for the descenders you find on letters like g,
+                                                    j, p
+                                                    and q.
+                                                    <br><br> You can: 　
+                                                    <br><br>• adjust the vertical-align of the
+                                                    image to position it elsewhere (e.g. the middle ) 　
+                                                    <br>• change the display so it isn’t inline.
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-qa2" role="tabpanel" aria-labelledby="list-qa2-list">
+                            <div class="card">
+                                <div class="handIn__content__title card-header">
+                                    <p class="d-flex justify-content-between">Chapter Assignment 2 /
+                                        HTML&CSS</p>
+                                    <p class="d-flex justify-content-between">Please check this file for
+                                        me, thanks!</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="handIn__content__info list-unstyled">
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Emily Wang <br><span>
+                                                            10:38 AM (4 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi Teacher, the attached file is my homework of chapter 2. And
+                                                    here
+                                                    comes a question: Why in the following code the height of the
+                                                    div is
+                                                    bigger than the height of the img ? There is a gap below the
+                                                    image,
+                                                    but it doesn’t seems to be a padding/margin. What is the gap or
+                                                    extra space below image?
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Andy Chen (You) <br><span>
+                                                            13:24 AM (1 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi David, by default, an image is rendered inline, like a letter
+                                                    so
+                                                    it sits on the same line that a, b, c and d sit on. There is
+                                                    space
+                                                    below that line for the descenders you find on letters like g,
+                                                    j, p
+                                                    and q.
+                                                    <br><br> You can: 　
+                                                    <br><br>• adjust the vertical-align of the
+                                                    image to position it elsewhere (e.g. the middle ) 　
+                                                    <br>• change the display so it isn’t inline.
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-qa3" role="tabpanel" aria-labelledby="list-qa3-list">
+                            <div class="card">
+                                <div class="handIn__content__title card-header">
+                                    <p class="d-flex justify-content-between">Chapter Assignment 2 /
+                                        HTML&CSS</p>
+                                    <p class="d-flex justify-content-between">Please check this file for
+                                        me, thanks!</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="handIn__content__info list-unstyled">
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Emily Wang <br><span>
+                                                            10:38 AM (4 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi Teacher, the attached file is my homework of chapter 2. And
+                                                    here
+                                                    comes a question: Why in the following code the height of the
+                                                    div is
+                                                    bigger than the height of the img ? There is a gap below the
+                                                    image,
+                                                    but it doesn’t seems to be a padding/margin. What is the gap or
+                                                    extra space below image?
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Andy Chen (You) <br><span>
+                                                            13:24 AM (1 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi David, by default, an image is rendered inline, like a letter
+                                                    so
+                                                    it sits on the same line that a, b, c and d sit on. There is
+                                                    space
+                                                    below that line for the descenders you find on letters like g,
+                                                    j, p
+                                                    and q.
+                                                    <br><br> You can: 　
+                                                    <br><br>• adjust the vertical-align of the
+                                                    image to position it elsewhere (e.g. the middle ) 　
+                                                    <br>• change the display so it isn’t inline.
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-qa4" role="tabpanel" aria-labelledby="list-qa4-list">
+                            <div class="card">
+                                <div class="handIn__content__title card-header">
+                                    <p class="d-flex justify-content-between">Chapter Assignment 2 /
+                                        HTML&CSS</p>
+                                    <p class="d-flex justify-content-between">Please check this file for
+                                        me, thanks!</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="handIn__content__info list-unstyled">
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Emily Wang <br><span>
+                                                            10:38 AM (4 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi Teacher, the attached file is my homework of chapter 2. And
+                                                    here
+                                                    comes a question: Why in the following code the height of the
+                                                    div is
+                                                    bigger than the height of the img ? There is a gap below the
+                                                    image,
+                                                    but it doesn’t seems to be a padding/margin. What is the gap or
+                                                    extra space below image?
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="media">
+                                            <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+                                                class="avatar mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="handIn__content__name">
+                                                    <h6 class="mt-0 mb-3">Andy Chen (You) <br><span>
+                                                            13:24 AM (1 hours ago)
+                                                        </span></h6>
+                                                </div>
+                                                <p class="handIn__content__txt mb-3">
+                                                    Hi David, by default, an image is rendered inline, like a letter
+                                                    so
+                                                    it sits on the same line that a, b, c and d sit on. There is
+                                                    space
+                                                    below that line for the descenders you find on letters like g,
+                                                    j, p
+                                                    and q.
+                                                    <br><br> You can: 　
+                                                    <br><br>• adjust the vertical-align of the
+                                                    image to position it elsewhere (e.g. the middle ) 　
+                                                    <br>• change the display so it isn’t inline.
+                                                </p>
+                                                <div class="attached d-flex ">
+                                                    <h6 class="d-flex border rounded"><span class="material-icons mr-2">
+                                                            attach_file
+                                                        </span>HW-2-David.zip</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 底部按鈕 -->
+                    <div class="handIn__content__btn d-flex align-items-center justify-content-between">
+                        <div class="btn__turnPage">
+                            <a href="#">
+                                <span class="material-icons mr-4">
+                                    chevron_left
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span class="material-icons">
+                                    chevron_right
+                                </span>
+                            </a>
+                        </div>
+                        <div class="btn__function">
+                            <button type="button" class="btn btn-outline-success mr-3">Mark as read</button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Reply
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <ul class="list-unstyled d-flex">
+                                                <li class="d-flex font-weight-bold mr-4">Body Text<span
+                                                        class="material-icons">
+                                                        arrow_drop_down
+                                                    </span></li>
+                                                <li class="mr-4"><a href="#"></a><span class="material-icons">
+                                                        format_bold
+                                                    </span></li>
+                                                <li class="mr-4"><a href="#">
+                                                        <span class="material-icons">
+                                                            format_italic
+                                                        </span>
+                                                    </a></li>
+                                                <li class="mr-4"><a href="#">
+                                                        <span class="material-icons">
+                                                            format_list_bulleted
+                                                        </span>
+                                                    </a></li>
+                                                <li class="mr-4"><a href="#">
+                                                        <span class="material-icons">
+                                                            format_list_numbered
+                                                        </span>
+                                                    </a></li>
+                                                <li class="mr-4"><a href="#">
+                                                        <span class="material-icons">
+                                                            image
+                                                        </span>
+                                                    </a></li>
+                                                <li class="mr-4"><a href="#">
+                                                        <span class="material-icons">
+                                                            link
+                                                        </span>
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        <span class="material-icons">
+                                                            code
+                                                        </span>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                        <input class="modal-body" type="text-area" placeholder="Reply an answer…">
+                                        </input>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-success"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-outline-success">Reply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
